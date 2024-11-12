@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 71px clamp(1.5rem, -1.603rem + 13.239vw, 10.313rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf2f8;
+    
+    min-height: 100vh;
+}
+
+.grid-section {
+    display: grid;
+    gap: 24px;
+    grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+}
+
+.grid-section article {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.grid-section article:nth-child(1) {
+    grid-area: daniel;
+}
+.grid-section article:nth-child(2) {
+    grid-area: jonathan;
+}
+.grid-section article:nth-child(3) {
+    grid-area: jeanette;
+}
+.grid-section article:nth-child(4) {
+    grid-area: patrick;
+}
+.grid-section article:nth-child(5) {
+    grid-area: kira;
+}
+
+@media (min-width: 675px) {
+
+    .grid-section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+        justify-content: center;
+        height: 572px;
+        gap: 30px;
+    }
+}
