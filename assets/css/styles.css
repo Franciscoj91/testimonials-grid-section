@@ -122,7 +122,8 @@ body {
             "daniel daniel jonathan kira"
             "jeanette patrick patrick kira";
         justify-content: center;
-        height: 572px;
+        height: 35.938rem;
+        max-width: 69.75rem;
         gap: 1.875rem;
     }
 
